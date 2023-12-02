@@ -37,13 +37,36 @@ u
 li
   list-style none
 
+p
+	padding 0
+	margin 0
+
 html, body, button, input, select
   font-family: 'CL'
 
 h1, h2, h3
 	font-family 'Cinzel'
 
-.container
+.application
 	width 100vw
 	height 100vh
+	position relative
+
+.container 
+  max-width: 1160px; //@proportional-skip
+  width: 100%;
+  margin: 0 auto
+
+  @media screen and (max-width: 1440px) 
+    max-width: 1136px; //@proportional-skip
+    
+  @media screen and (max-width: 1365px) 
+    max-width: 1052px; //@proportional-skip
+    
+  @media screen and (max-width: 1279px) 
+    max-width: 765px; //@proportional-skip
+    padding: 0 20px; //@proportional-skip
+    
+  @media screen and (max-width: 767px) 
+    max-width: 375px //@proportional-skip
 

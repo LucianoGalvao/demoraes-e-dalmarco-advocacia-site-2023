@@ -1,10 +1,13 @@
 import "./assets/styles/globals.styl";
-import { Hero } from "./components";
+import { Concept, Hero, NavBar } from "./components";
 
 function App() {
 	return (
-		<div className="container">
+		<div className="application">
+			<NavBar />
 			<Hero />
+			<Concept />
+			<div style={{height: 500}}></div>
 		</div>
 	);
 }
