@@ -10,6 +10,7 @@
 	justify-content center
 	align-items flex-end
 	flex-direction column
+	transition 1s
 
 	&:global(.open) 
 		background-color $brown
@@ -60,21 +61,25 @@
 				opacity 0  
 		
 	nav
-		margin-top 30px
 		display flex
 		align-items center
 		flex-direction column
-		max-height 0
+		height 0
 		overflow hidden
 		margin-top 0
-		transition max-height .1s
+		transition width 1s, height .6s
 		width 0
 		text-align center
 
 		&:global(.open) 
-			max-height 500px
+			height 150px
 			margin-top 30px
-			width 100%
+			width 290px
+
+			ul
+				li
+					a
+						font-size 20px
 
 		ul
 			margin 0
@@ -90,13 +95,18 @@
 				a
 					text-decoration none
 					color #fff
-					font-size 20px
+					font-size 0px
 					font-family 'Cinzel'
 					letter-spacing 2px
-					transition .3s
+					transition color .3s
+					white-space nowrap
 
 					&:hover
 						color $gold
+
+@media (max-width 1440px)
+	.navbar
+		right 60px
 
 @media (max-width 1279px)
 	.navbar 
@@ -114,11 +124,12 @@
 
 		:global(.hamburger) 
 			position fixed
-			top 20px
-			right 20px
+			top 80px
+			right 80px
+			transition .3s
 
 		nav
-			max-height 100%
+			height 100%
 			width 100%
 			position absolute
 			top 0
@@ -130,14 +141,22 @@
 			align-items center
 			height 100%
 			margin-top 0
+			width 100%
 
 			&:global(.open) 
 				left 0
-				max-height 100%
+				height 100%
 				margin-top 0
+				width 100%
 
 			ul
 				padding 20px
 
 				li
 					margin-bottom 30px
+
+@media (max-width 767px)
+	.navbar
+		:global(.hamburger) 
+			top 40px
+			right 40px
