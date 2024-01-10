@@ -1,5 +1,5 @@
 import "./assets/styles/globals.styl";
-import { Concept, Hero, NavBar } from "./components";
+import { Concept, Hero, Lawyers, NavBar } from "./components";
 
 function App() {
 	return (
@@ -7,6 +7,7 @@ function App() {
 			<NavBar />
 			<Hero />
 			<Concept />
+			<Lawyers />
 			<div style={{height: 500}}></div>
 		</div>
 	);
