@@ -5,7 +5,7 @@ import danubia from '../assets/img/lawyers/danubia1.jpg'
 
 export default function Lawyers() {
 	return (
-		<div className={st.lawyers}>
+		<div id="quem-somos" className={st.lawyers}>
 			<section className={cn(st.lawyer, st.vilso)}>
 				<picture>
 					<img src={vilso} alt="Imagem do advogado e sócio Vilso De Moraes" />

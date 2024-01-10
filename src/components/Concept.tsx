@@ -14,7 +14,7 @@ export default function Concept() {
 					dignissimos quo ipsam!
 				</p>
 				<a href="#">
-					Fale com um advogado agora <span className="icon-phone"></span>
+					Fale com um advogado agora <span className="icon-whatsapp"></span>
 				</a>
 			</div>
 		</div>
