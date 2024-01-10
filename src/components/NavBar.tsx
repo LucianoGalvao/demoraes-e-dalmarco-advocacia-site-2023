@@ -23,7 +23,7 @@ export default function NavBar() {
 				<ul>
 					{menu.map(({ name, slug, external }, key) => (
 						<li key={key}>
-							<a title={name} href={slug} target={external ? "_blank" : ""}>
+							<a onClick={toggleMenu} title={name} href={slug} target={external ? "_blank" : ""}>
 								{name}
 							</a>
 						</li>
